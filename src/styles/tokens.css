@@ -1,0 +1,67 @@
+:root{
+  --font-sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --text-xs:12px; --text-sm:14px; --text-base:16px; --text-lg:18px;
+  --leading-display:1.05;
+  --tracking-tight:-0.025em; --tracking-tighter:-0.04em; --tracking-wide:0.06em;
+
+  /* Color — orange is reserved for CTAs only */
+  --n-0:hsl(0 0% 100%);
+  --n-100:hsl(249 18% 95%);
+  --n-150:hsl(249 14% 91%);
+  --n-200:hsl(240 10% 88%);
+  --n-300:hsl(240 7% 78%);
+  --n-500:hsl(240 5% 46%);
+  --n-900:hsl(240 10% 10%);
+
+  --green-500:hsl(152 60% 36%);
+  --green-50:hsl(152 50% 94%);
+  --red-500:hsl(0 72% 50%);
+  --red-50:hsl(0 80% 96%);
+  --amber-50:hsl(45 90% 93%);
+  --lavender-100:hsl(249 30% 92%);
+
+  --foreground:var(--n-900);
+  --muted:var(--n-150);
+  --muted-foreground:var(--n-500);
+  --border:var(--n-200);
+  --nav:var(--n-0);
+
+  --surface-page:var(--n-100);
+  --surface-card:var(--n-0);
+  --surface-sunken:var(--n-150);
+  --surface-inverse:var(--n-900);
+  --surface-device:var(--lavender-100);
+  --text-strong:var(--n-900);
+  --text-muted:var(--muted-foreground);
+  --text-inverse:var(--n-0);
+  --text-soft:hsl(240 10% 10% / .8);
+  --ring:hsl(240 10% 10% / .9);
+  --success:var(--green-500);
+  --success-soft:var(--green-50);
+  --danger:var(--red-500);
+  --danger-soft:var(--red-50);
+  --notice-soft:var(--amber-50);
+
+  /* Radii, elevation, motion */
+  --container-max:1280px;
+  --radius-md:8px; --radius-lg:12px; --radius-xl:16px; --radius-full:999px;
+  --shadow-sm:0 1px 2px 0 rgb(0 0 0 / .05);
+  --shadow-md:0 4px 12px -2px rgb(20 20 30 / .08),0 1px 2px rgb(20 20 30 / .04);
+  --shadow-lg:0 18px 40px -12px rgb(20 20 30 / .18),0 2px 6px rgb(20 20 30 / .05);
+  --shadow-sticky:0 -8px 24px -8px rgb(20 20 30 / .12);
+  --ease-out:cubic-bezier(.2,.8,.2,1);
+  --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --dur-fast:150ms; --dur:200ms; --dur-slow:400ms;
+  --blur-nav:14px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:var(--font-sans);background:var(--surface-page);color:var(--text-strong);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,p{margin:0;text-wrap:pretty}
+a{color:var(--text-strong);text-decoration:none}
+a:hover{opacity:.8}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
